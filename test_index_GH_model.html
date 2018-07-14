@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="head" src="https://cdn.rawgit.com/iggirex/3D_models_website_test/work/adamHead/adamHead.gltf"></a-asset-item>
+        </a-assets>
+
+
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+
+        <a-gltf-model src="#head" position="0 2 -5" rotation="0 180 0">
+            <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000"
+            repeat="indefinite"></a-animation>
+        </a-gltf-model>
+    </a-scene>
+  </body>
+</html>
